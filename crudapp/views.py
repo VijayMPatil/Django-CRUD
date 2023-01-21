@@ -8,7 +8,7 @@ def index(request):
 
 def employee_list(request):
     context = {'employee_list': Employee.objects.all()}
-    return render(request,'register/employee_list.html',context)
+    return render(request,'register/employee_list.html',context=context)
 
 def employee_form(request, id=0):
     if request.method == "GET":

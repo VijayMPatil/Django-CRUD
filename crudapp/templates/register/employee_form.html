@@ -1,5 +1,4 @@
 {% extends 'register/base.html' %}
-
 {% load crispy_forms_tags %}
 
 
@@ -8,14 +7,8 @@
     {% csrf_token %}
     {{form.full_name|as_crispy_field}}
     {{form.mobile|as_crispy_field}}
-    <div class="row" align="center">
-        <div class="col-md-6">
-            {{form.emp_code|as_crispy_field}}
-        </div>
-        <div class="col-md-6">
-            {{form.position|as_crispy_field}}
-        </div>
-    </div>
+    {{form.emp_code|as_crispy_field}}
+    {{form.position|as_crispy_field}}
     <hr>
     <div class="row">
         <div class="col-md-8">

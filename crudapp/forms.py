@@ -1,4 +1,4 @@
-from .models import Employee,position
+from .models import Employee
 from django import forms
 
 class EmployeeRegisterForm(forms.ModelForm):
